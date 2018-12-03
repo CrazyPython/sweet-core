@@ -11,6 +11,7 @@ const unaryOperators = {
   await: true,
 };
 const binaryOperatorPrecedence = {
+  '->': 20,
   '*': 14,
   '/': 14,
   '%': 14,
@@ -37,6 +38,7 @@ const binaryOperatorPrecedence = {
 };
 
 var operatorAssoc = {
+  '->': 'left',
   '*': 'left',
   '/': 'left',
   '%': 'left',
